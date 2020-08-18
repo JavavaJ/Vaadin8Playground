@@ -8,8 +8,12 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.context.annotation.Scope;
 
 @SpringUI
+@Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class MyUI extends UI {
 
     private VerticalLayout root;
