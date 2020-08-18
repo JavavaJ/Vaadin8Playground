@@ -20,7 +20,9 @@ public class QuestionsLayout extends VerticalLayout {
 
     @PostConstruct
     public void init() {
+        System.out.println("==================================================================");
         System.out.println("Vaading elements are of PROTOTYPE scope!");
+        System.out.println("==================================================================");
         update();
     }
 
