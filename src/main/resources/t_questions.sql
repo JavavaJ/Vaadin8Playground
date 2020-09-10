@@ -1,3 +1,17 @@
+DROP TABLE IF EXISTS Questions;
+
+CREATE TABLE Questions (
+    id IDENTITY PRIMARY KEY,
+    question VARCHAR(8000),
+    a VARCHAR(255),
+    b VARCHAR(255),
+    c VARCHAR(255),
+    d VARCHAR(255),
+    right_an VARCHAR(255),
+    tags VARCHAR(255)
+);
+
+
 INSERT INTO Questions (id, question, a, b, c, d, right_an, tags) VALUES (1, 'A- Hello, what ______ your name?', 'is', 'are', 'am', 'be', 'a', 'to_be');
 INSERT INTO Questions (id, question, a, b, c, d, right_an, tags) VALUES (2, '______ name is John. And my ______ is Johnson.', 'Your / surname', 'My / surname', 'I / surname', 'I / name', 'b', 'possessives');
 INSERT INTO Questions (id, question, a, b, c, d, right_an, tags) VALUES (3, 'My name is Lisa. ______ Lisa Peterson.', 'My am', 'I is', 'I am', 'I', 'c', 'to_be');
